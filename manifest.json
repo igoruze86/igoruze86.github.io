@@ -9,5 +9,4 @@
     }
   },
   "permissions": ["gcm", "storage", "notifications", "identity", "browser"],
-  "icons": { "128": "OneSignal_icon.png" }
 }
