@@ -9,8 +9,8 @@
       "scripts": ["OneSignal.js", "background.js"]
     }
   },
-  "serviceworker": [{
-    "src": "OneSignalSDKWorker.js",
-    }],
-  "permissions": ["gcm", "storage", "notifications", "identity", "browser"],
+  "serviceworker": {
+    "src": "OneSignalSDKWorker.js"
+    },
+  "permissions": ["gcm", "storage", "notifications", "identity", "browser"]
 }
