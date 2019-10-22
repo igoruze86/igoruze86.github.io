@@ -86,12 +86,8 @@
               </form>
       </div>
 
-
-
-
-
-         </section>
-
+    </section>
+    <footer>
          <!-- Mautic Form Submision Code -->
          <script type="text/javascript">
              /** This section is only needed once per page if manually copying **/
@@ -112,17 +108,17 @@
              }
          </script>
 
+          <!-- Mautic Tracking Code -->
+          <script>
+              (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
+                  w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
+                  m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://st-mautic.webedia.me/index.php/mtc.js','mt');
 
-            <!-- Mautic Tracking Code -->
-            <script>
-                (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
-                    w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
-                    m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
-                })(window,document,'script','https://st-mautic.webedia.me/index.php/mtc.js','mt');
-
-                mt('send', 'pageview');
-            </script>
-
+              mt('send', 'pageview');
+          </script>
+    </footer>
+    
 </body>
 
 </html>
