@@ -107,11 +107,44 @@
         <div class="c--newsletter__content">
           <h2 class="c--newsletter__title">تسجّلي في نشرة ياسمينة</h2>
           <p>	واكبي كل جديد في عالم الموضة والأزياء وتابعي أجدد ابتكارات العناية بالجمال والمكياج في نشرتنا الأسبوعية</p>
-          <form autocomplete="false" role="form" method="post" action="http://mautic.webedia.me/index.php/form/submit?formId=2" id="mauticform_testnewslettersubscription" data-mautic-form="testnewslettersubscription" enctype="multipart/form-data" class="c--newsletter--form">
+
+          <div id="mauticform_wrapper_testnewslettersubscription" class="mauticform_wrapper">
+              <form autocomplete="false" role="form" method="post" action="http://mautic.webedia.me/index.php/form/submit?formId=2" id="mauticform_testnewslettersubscription" data-mautic-form="testnewslettersubscription" enctype="multipart/form-data" class="c--newsletter--form">
+                  <div class="mauticform-error" id="mauticform_testnewslettersubscription_error"></div>
+                  <div class="mauticform-message" id="mauticform_testnewslettersubscription_message"></div>
+                  <div class="mauticform-innerform">
+
+
+                    <div class="mauticform-page-wrapper mauticform-page-1" data-mautic-form-page="1">
+
+                      <div id="mauticform_testnewslettersubscription_email" data-validate="email" data-validation-type="email" class="mauticform-row mauticform-email mauticform-field-1 mauticform-required">
+                          <input id="mauticform_input_testnewslettersubscription_email" name="mauticform[email]" value="" placeholder="ادخلي بريدك الإلكتروني" class="mauticform-input c--newsletter__input invalid" type="email">
+                          <span class="mauticform-errormsg" style="display: none;">This is required</span>
+                      </div>
+
+                      <div id="mauticform_testnewslettersubscription_submit" class="mauticform-row mauticform-button-wrapper mauticform-field-2">
+                          <button type="submit" name="mauticform[submit]" id="mauticform_input_testnewslettersubscription_submit" value="" class="mauticform-button c--newsletter__submit disabled">إشتركي</button>
+                      </div>
+                      </div>
+                  </div>
+
+                  <input type="hidden" name="mauticform[formId]" id="mauticform_testnewslettersubscription_id" value="2">
+                  <input type="hidden" name="mauticform[return]" id="mauticform_testnewslettersubscription_return" value="">
+                  <input type="hidden" name="mauticform[formName]" id="mauticform_testnewslettersubscription_name" value="testnewslettersubscription">
+
+                  </form>
+          </div>
+
+
+
+
+
+
+          <!-- <form autocomplete="false" role="form" method="post" action="http://mautic.webedia.me/index.php/form/submit?formId=2" id="mauticform_testnewslettersubscription" data-mautic-form="testnewslettersubscription" enctype="multipart/form-data" class="c--newsletter--form">
             <input id="mauticform_input_testnewslettersubscription_email" name="mauticform[email]" value="" placeholder="ادخلي بريدك الإلكتروني" class="mauticform-input c--newsletter__input invalid" type="email">
             <button type="submit" name="mauticform[submit]" id="mauticform_input_testnewslettersubscription_submit" value="" class="mauticform-button c--newsletter__submit disabled">إشتركي</button>
-            <!-- <script type="text/javascript" src="https://mautic.webedia.me/index.php/form/generate.js?id=2"></script> -->
-          </form>
+            <script type="text/javascript" src="https://mautic.webedia.me/index.php/form/generate.js?id=2"></script>
+          </form> -->
         </div>
       </div>
     </div>
