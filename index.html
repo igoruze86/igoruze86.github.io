@@ -107,15 +107,37 @@
         <div class="c--newsletter__content">
           <h2 class="c--newsletter__title">تسجّلي في نشرة ياسمينة</h2>
           <p>	واكبي كل جديد في عالم الموضة والأزياء وتابعي أجدد ابتكارات العناية بالجمال والمكياج في نشرتنا الأسبوعية</p>
-          <!-- <form> -->
-            <script type="text/javascript" src="https://mautic.webedia.me/index.php/form/generate.js?id=2"></script>
-          <!-- </form> -->
+          <form autocomplete="false" role="form" method="post" action="http://mautic.webedia.me/index.php/form/submit?formId=2" id="mauticform_testnewslettersubscription" data-mautic-form="testnewslettersubscription" enctype="multipart/form-data" class="c--newsletter--form">
+            <input id="mauticform_input_testnewslettersubscription_email" name="mauticform[email]" value="" placeholder="ادخلي بريدك الإلكتروني" class="mauticform-input c--newsletter__input invalid" type="email">
+            <button type="submit" name="mauticform[submit]" id="mauticform_input_testnewslettersubscription_submit" value="" class="mauticform-button c--newsletter__submit disabled">إشتركي</button>
+            <!-- <script type="text/javascript" src="https://mautic.webedia.me/index.php/form/generate.js?id=2"></script> -->
+          </form>
         </div>
       </div>
     </div>
-
-    <a href="page1.html" >link</a>
+    <div class="">
+      <a href="page1.html" >link</a>
+    </div>
     <footer>
+      <script type="text/javascript">
+        /** This section is only needed once per page if manually copying **/
+        if (typeof MauticSDKLoaded == 'undefined') {
+            var MauticSDKLoaded = true;
+            var head            = document.getElementsByTagName('head')[0];
+            var script          = document.createElement('script');
+            script.type         = 'text/javascript';
+            script.src          = 'https://mautic.webedia.me/media/js/mautic-form.js';
+            script.onload       = function() {
+                MauticSDK.onLoad();
+            };
+            head.appendChild(script);
+            var MauticDomain = 'https://mautic.webedia.me';
+            var MauticLang   = {
+                'submittingMessage': "Please wait..."
+            }
+        }
+      </script>
+
       <script>
         (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
             w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
