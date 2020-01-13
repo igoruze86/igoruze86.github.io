@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Test Mautic</title>
     <style type="text/css">
       .c--newsletter {
         direction: rtl;
@@ -115,5 +115,15 @@
     </div>
 
     <a href="page1.html" >link</a>
+    <footer>
+      <script>
+        (function(w,d,t,u,n,a,m){w['MauticTrackingObject']=n;
+            w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
+            m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://mautic.webedia.me/mtc.js','mt');
+
+        mt('send', 'pageview');
+      </script>
+    </footer>
   </body>
 </html>
