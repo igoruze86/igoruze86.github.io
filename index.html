@@ -107,7 +107,9 @@
         <div class="c--newsletter__content">
           <h2 class="c--newsletter__title">تسجّلي في نشرة ياسمينة</h2>
           <p>واكبي كل جديد في عالم الموضة والأزياء وتابعي أجدد ابتكارات العناية بالجمال والمكياج في نشرتنا الأسبوعية</p>
-          <script type="text/javascript" src="https://mautic.webedia.me/index.php/form/generate.js?id=2"></script>
+
+          <!-- <script type="text/javascript" src="https://mautic.webedia.me/index.php/form/generate.js?id=2"></script> -->
+
         </div>
       </div>
     </div>
@@ -121,6 +123,12 @@
             m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
         })(window,document,'script','https://mautic.webedia.me/mtc.js','mt');
         mt('send', 'pageview');
+      </script>
+      <script>
+        var newsletterContent=document.querySelector(".c--newsletter__content")
+        var script=document.createElement("script")
+        script.src="https://mautic.webedia.me/index.php/form/generate.js?id=2"
+        newsletterContent.appendChild(script)
       </script>
     </footer>
   </body>
