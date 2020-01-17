@@ -7,7 +7,7 @@
       .c--newsletter {
         direction: rtl;
         text-align: right;
-        font-family: Dubai,"Noto Serif",serif;
+        font-family: Tahoma, Geneva, sans-serif;
         box-sizing: inherit;
         background: #f3f1ee;
         padding-bottom: 0;
@@ -15,7 +15,7 @@
       .c--newsletter__inner {
         direction: rtl;
         text-align: right;
-        font-family: Dubai,"Noto Serif",serif;
+        font-family: Tahoma, Geneva, sans-serif;
         box-sizing: inherit;
         display: flex;
         flex-flow: row-reverse;
@@ -26,7 +26,7 @@
       .c--newsletter__img {
         direction: rtl;
         text-align: right;
-        font-family: Dubai,"Noto Serif",serif;
+        font-family: Tahoma, Geneva, sans-serif;
         box-sizing: inherit;
         background-size: cover;
         background-position: 50%;
@@ -36,21 +36,22 @@
       .c--newsletter__content {
         direction: rtl;
         text-align: right;
-        font-family: Dubai,"Noto Serif",serif;
+        font-family: Tahoma, Geneva, sans-serif;
         box-sizing: inherit;
+        color: #282828;
         width: 61%;
         max-width: 1000px;
         padding: 5.7% 9% 5.3% 10.6%;
       }
       .c--newsletter__title {
         direction: rtl;
-        font-family: Dubai,"Noto Serif",serif;
+        font-family: Tahoma, Geneva, sans-serif;
         box-sizing: inherit;
         font-style: normal;
         font-stretch: normal;
         letter-spacing: normal;
         text-align: right;
-        color: #282828;
+
         position: relative;
         font-weight: 500;
         font-size: 56px;
@@ -61,7 +62,7 @@
       .c--newsletter--form {
         direction: rtl;
         text-align: right;
-        font-family: Dubai,"Noto Serif",serif;
+        font-family: Tahoma, Geneva, sans-serif;
         box-sizing: inherit;
         position: relative;
       }
@@ -78,8 +79,21 @@
         margin: 7px 0 75px 40px;
         font-size: 18px;
       }
-      .c--newsletter__input.invalid {
+      /* .c--newsletter__input.invalid {
         color: #d0021b;
+      } */
+      .mauticform-message, .mauticform-errormsg{
+        color: #b29f51;
+        /* font-weight: bold; */
+        direction: rtl;
+        position: absolute;
+        bottom: 80px;
+        font-size: 1.3em;
+      }
+      .mauticform-errormsg {
+        font-size: 0.9em;
+        color: #d0021b;
+        direction: ltr;
       }
       .c--newsletter__submit {
         direction: rtl;
@@ -104,14 +118,15 @@
   <body>
     <div class="c--newsletter">
       <div class="c--newsletter__inner">
+        <div class="c--newsletter__img" style="background-image: url(https://img.yasmina.com/1p7LdLJgIyb5S8gYiq-yNsMiITk=/848x560/smart/http://harmony-assets-live.s3.amazonaws.com/image_source/9c/f5/9cf519827c416bb8d442d3ca82c0f2fc0e28ae1b.jpg);"></div>
         <div class="c--newsletter__content">
           <h2 class="c--newsletter__title">تسجّلي في نشرة ياسمينة</h2>
           <p>واكبي كل جديد في عالم الموضة والأزياء وتابعي أجدد ابتكارات العناية بالجمال والمكياج في نشرتنا الأسبوعية</p>
         </div>
       </div>
     </div>
-    <div style="width:100%;padding:20px;margin:0 auto; text-align:center; font-size:1.5em;">
-      <a href="page1.html">Page 2</a>
+    <div style="padding:50px; padding-left: 10px;text-align:left; font-size:1em;">
+      <a href="page1.html">>>Page 2</a>
     </div>
     <footer>
       <script>
